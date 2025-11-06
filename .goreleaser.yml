@@ -15,10 +15,8 @@ builds:
       - linux
     goarch:
       - amd64
-      - arm64
     goamd64:
-      - v3
-      - v1
+      - v2
 
     # If you want to build this locally, you can set the following environment variables:
     # export BUILD_HOST=$(hostname)
@@ -51,10 +49,8 @@ builds:
       - linux
     goarch:
       - amd64
-      - arm64
     goamd64:
-      - v3
-      - v1
+      - v2
 
     ldflags:
       - "-s -w \
@@ -89,7 +85,7 @@ dockers:
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
     goarch: amd64
-    goamd64: v3
+    goamd64: v2
     extra_files:
       - LICENSE
       - README.md
